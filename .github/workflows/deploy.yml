@@ -35,18 +35,19 @@ jobs:
 
       - name: Terraform Init
         run: terraform init
+        working-directory: ./envs/prod
 
       - name: Terraform Apply
         run: terraform apply -auto-approve
+        working-directory: ./envs/prod
 
       - name: Terraform Plan
         run: terraform plan -input=false
+        working-directory: ./envs/prod
 
       - name: Terraform Output
         run: terraform output
-
-      
-
+        working-directory: ./envs/prod
 
 
       
