@@ -1,6 +1,6 @@
 terraform {
   backend "gcs" {
-    bucket = var.bucket
-    prefix = var.prefix
+    bucket = "checkout-tf"
+    prefix = "envs/prod"
   }
 }

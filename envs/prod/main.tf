@@ -14,8 +14,15 @@ module "compute_instance" {
   disk_image  = "debian-cloud/debian-11"
   disk_size  = 10
   zone  = "us-central1-a"
+  firewall_name = "checkout-vm-firewall"
   network_name = module.network.network_name
   subnetwork_name = module.network.subnetwork_private
+}
+
+module "namebucket" {
+  source = "./artifact"
+  region = "us-central1"
+  project = "checkout-armour"
 }
 
 module "cloudsql" {

@@ -33,3 +33,9 @@ variable "zone" {
   type = string
   
 }
+
+variable "firewall_name" {
+  description = "The name of the firewall rule"
+  type = string
+  
+}

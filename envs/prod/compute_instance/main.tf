@@ -15,3 +15,16 @@ resource "google_compute_instance" "app-server" {
         subnetwork = var.subnetwork_name
     }
 }
+
+resource "google_compute_firewall" "vm-firewall" {
+  name    = var.firewall_name
+  network = var.network_name
+
+  allow {
+    protocol = "tcp"
+    ports    = ["22", "80", "443", "5000"]
+  }
+
+  source_ranges = ["0.0.0.0/0"]
+
+}
