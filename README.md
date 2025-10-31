@@ -144,6 +144,10 @@ I have used micro variants of VM which is e2-micro and DB is db-f1-micro
 
 ![Pipelines](assets/pipeline.png)
 
+> VM Dashboard 
+
+![Dashboard](assets/dashboard.png)
+
 > Email Notification showing the pipeline result
 
 ![Email Notification showing the pipeline result](assets/email_noti.png)
