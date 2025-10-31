@@ -136,10 +136,18 @@ I have used micro variants of VM which is e2-micro and DB is db-f1-micro
 
 ## Some reference images
 
+> Image showing manual build after test
+
 ![Image showing manual build after test](assets/build.png)
+
+> Pipelines
 
 ![Pipelines](assets/pipeline.png)
 
+> Email Notification showing the pipeline result
+
 ![Email Notification showing the pipeline result](assets/email_noti.png)
+
+> SS of Flask App
 
 ![SS of Flask App](assets/Flask.png)
