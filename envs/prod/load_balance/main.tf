@@ -10,7 +10,7 @@ resource "google_compute_health_check" "lb_health_check" {
   unhealthy_threshold = 2
 
  tcp_health_check {
-    port = 5000
+    port = 80
  }
   
 }
@@ -22,7 +22,7 @@ resource "google_compute_instance_group" "lb_instance_group" {
 
   named_port {
     name = "http"
-    port = 5000
+    port = 80
   }
 }
 
