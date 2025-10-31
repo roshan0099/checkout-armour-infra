@@ -17,6 +17,8 @@ The idea is to deploy a Basic Flask CRUD web application on GCP using:
 
 - Secret Manager for secure configuration management
 
+- Github Email Notification to get alerted about the pipeline
+
 The setup ensures automated deployment, security, and cost optimization.
 
 
@@ -130,3 +132,14 @@ I have used micro variants of VM which is e2-micro and DB is db-f1-micro
   VM endpoint is accessible through LB with port 80 and theres /health to check if the app is healthy 
 
   Additionally will add cloudfare to configure the ssl and as a proxy
+
+
+## Some reference images
+
+![Image showing manual build after test](assets/build.png)
+
+![Pipelines](assets/pipeline.png)
+
+![Email Notification showing the pipeline result](assets/email_noti.png)
+
+![SS of Flask App](assets/Flask.png)
