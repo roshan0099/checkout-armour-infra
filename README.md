@@ -37,9 +37,12 @@ CI/CD: `GitHub Actions workflow builds Docker image -> pushes to Artifact Regist
 - HTTP Load Balancer pointing to backend instance group
 
 - Secret Manager for credentials (DB)
+
 - Secret variable in Github for CICD (Cred, Project ID etc)
 
 - Firewall rules for controlled ingress (22, 80, 443)
+
+- Added Dashbard to see the metrics
 
 ### Networking:
 
@@ -143,6 +146,10 @@ I have used micro variants of VM which is e2-micro and DB is db-f1-micro
 > Pipelines
 
 ![Pipelines](assets/pipeline.png)
+
+> VM Dashboard 
+
+![Dashboard](assets/dashboard.png)
 
 > Email Notification showing the pipeline result
 

@@ -28,4 +28,5 @@ Deploy a cloud-native Flask app using infrastructure automation (Terraform) and 
 |Github Secrets|Used tpo store cred required for the pipeline|
 |Cloudfare| Used as a proxy for ssl and avoid DDOS|
 |Github Alert| Used to alert in case of pipeline failure or success|
+|Google Dashboard| Added Dashboard to get an overview of VM|
 
