@@ -3,7 +3,7 @@
 
 This repo mainly contains the infra for the project [FLASK-APP](https://github.com/roshan0099/Python-Flask-CRUD-App)
 
-You can access the app [here](http://34.117.123.20/) for now 
+You can access the app [here](https://flask.mroshank.me/) for now 
 
 The idea is to deploy a Basic Flask CRUD web application on GCP using:
 
@@ -52,7 +52,7 @@ CI/CD: `GitHub Actions workflow builds Docker image -> pushes to Artifact Regist
 
 - Load Balancer with health checks via port 80
 
-FLOW :  `User → HTTP LB → Backend Service → Instance Group → Flask App (Docker)
+FLOW :  `User -> Cloudfare -> HTTP LB -> Backend Service -> Instance Group -> Flask App (Docker)
 `
 
 

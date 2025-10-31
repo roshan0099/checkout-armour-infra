@@ -14,6 +14,8 @@ Deploy a cloud-native Flask app using infrastructure automation (Terraform) and 
 
 - Verified application health via LB and /health endpoint.
 
+- Cloudfare is used as proxy and dns config
+
 ## Architectural Decision Highlights
 
 
