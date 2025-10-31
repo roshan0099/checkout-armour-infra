@@ -27,5 +27,5 @@ Deploy a cloud-native Flask app using infrastructure automation (Terraform) and 
 |Secret Manager| Used to store sensitive info used in the app|
 |Github Secrets|Used tpo store cred required for the pipeline|
 |Cloudfare| Used as a proxy for ssl and avoid DDOS|
-
+|Github Alert| Used to alert in case of pipeline failure or success|
 
