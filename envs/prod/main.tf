@@ -31,3 +31,8 @@ module "cloudsql" {
   module_name = module.network.peering_connection
 }
 
+module "load_balance" {
+  source = "./load_balance"
+  instance_deet = module.compute_instance.server_link
+}
+
